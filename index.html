@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 19: Buscador de Fotos</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Buscador de imágenes</h1>
     <div class="container">
-      <form>
-        <input type="search" name="buscador" id="search" onkeyup="searchPhoto()"/>
+      <h1 class="title">Buscador de imágenes</h1>
+      <form class="form">
+        <input
+          type="search"
+          name="buscador"
+          id="search"
+          required
+        />
+        <label class="label">
+            <span class="text"> Ingrese su búsqueda </span>
+        </label>
       </form>
-      <div id="result"></div>
+      <div id="result">
+
+      </div>
     </div>
     <script src="./js/index.js"></script>
   </body>
